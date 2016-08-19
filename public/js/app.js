@@ -74,6 +74,9 @@ angular.module("contactsApp", ['ngRoute'])
                 });
         }
     })
+    .controller("DoneController", function(contacts, $scope) {
+        console.log('need to do anything?');
+    })
     .controller("ListController", function(contacts, $scope) {
         $scope.contacts = contacts.data;
     })
