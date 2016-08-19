@@ -47,9 +47,13 @@
       var url = window.location.href;
       console.log('url: ', url);
       var n = str.indexOf("//");
+      console.log('n: ', n);
       var x = str.substring(n+2);
+      console.log('x: ', x);
       var m = str.indexOf(".");
+      console.log('m: ', m);
       var out = str.substring(n+2,m);
+      console.log('out: ', out);
       $('#name').text(out);
     </script>
   </body>
