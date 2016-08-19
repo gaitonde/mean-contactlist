@@ -29,7 +29,7 @@
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <div class="navbar-brand" href="#/">MEAN Contact Demo</div>
+          <div class="navbar-brand" href="#/">MEAN Contact Demo - <span id="name"></span></div>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -44,10 +44,13 @@
     </div>
 
     <script>
-    var pathname = window.location.pathname; // Returns path only
-    var url      = window.location.href;
-    console.log('url: ', url);
-    console.log('pathname: ', pathname);
+      var url = window.location.href;
+      console.log('url: ', url);
+      var n = str.indexOf("//");
+      var x = str.substring(n+2);
+      var m = str.indexOf(".");
+      var out = str.substring(n+2,m);
+      $('#name').text(out);
     </script>
   </body>
 </html>
